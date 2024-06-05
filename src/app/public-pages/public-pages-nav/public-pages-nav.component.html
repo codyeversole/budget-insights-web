@@ -1,0 +1,20 @@
+<div class="container-parent">
+  <div class="container nav-container">
+    <div class="nav-row justify-between w-full">
+      <div class="nav-row">
+        <div class="nav-button text-center">
+          <div class="nav-button bg-[var(--grey-color)] rounded-lg">BUDGET INSIGHTS </div>
+        </div>
+        <div class="nav-button">How it works</div>
+        <div class="nav-button">Project</div>
+        <div class="nav-button">Contact</div>
+      </div>
+      <div class="nav-row">
+        <div *ngIf="!isLoggedIn" class="nav-button" (click)="login()">Sign In</div>
+        <div *ngIf="!isLoggedIn" class="nav-button" (click)="register()">Create Account</div>
+        <div *ngIf="isLoggedIn" class="nav-button">Go to my budgets</div>
+        <div *ngIf="isLoggedIn" class="nav-button" (click)="logout()">Sign out (signed in as {{userService.userProfile?.username}})</div>
+      </div>
+    </div>
+  </div>
+</div>

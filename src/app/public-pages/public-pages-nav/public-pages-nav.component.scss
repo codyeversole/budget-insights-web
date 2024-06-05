@@ -1,0 +1,16 @@
+.nav-container {
+    @apply flex flex-row px-10 py-2;
+}
+
+.nav-button {
+    @apply text-lg px-3 py-1 cursor-pointer rounded hover:underline;
+    font-family: Ubuntu;
+}
+
+.nav-row {
+    @apply flex flex-row items-center gap-5;
+}
+
+.container-parent {
+    background-color: var(--primary-color);
+}

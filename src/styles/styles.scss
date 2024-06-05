@@ -1,0 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root { 
+   --primary-color: #99ccff;
+   --secondary-color: #336699;
+   --grey-color: #f2f2f2;
+   --dark-color: #1a1a1a;
+}
+
+body {
+    @apply p-0 m-0;
+    font-family: Roboto-Regular;
+}
+
+@font-face {
+    font-family: Roboto-Regular;
+    src: url(./fonts/Roboto-Regular.ttf);
+}
+
+@font-face {
+    font-family: Roboto-Bold;
+    src: url(./fonts/Roboto-Bold.ttf);
+}
+
+@font-face {
+    font-family: Inter;
+    src: url(./fonts/Inter-Regular.ttf);
+}
+
+@font-face {
+    font-family: Ubuntu;
+    src: url(./fonts/Ubuntu-Regular.ttf);
+}
+
+.button-primary {
+    @apply bg-[var(--grey-color)] rounded text-center text-lg px-10 py-2 cursor-pointer;
+}
+
+.container-parent {
+    @apply flex flex-row justify-center;
+}
+
+.container {
+    @apply max-w-[1500px];
+}
