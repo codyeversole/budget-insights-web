@@ -1,15 +1,15 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-import { UserPortalComponent } from './user-portal.component';
+import { BudgetDashboardComponent } from './budget-dashboard.component';
 
 describe('UserPortalComponent', () => {
-  let component: UserPortalComponent;
-  let fixture: ComponentFixture<UserPortalComponent>;
+  let component: BudgetDashboardComponent;
+  let fixture: ComponentFixture<BudgetDashboardComponent>;
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      imports: [ UserPortalComponent ]
+      imports: [ BudgetDashboardComponent ]
     });
-    fixture = TestBed.createComponent(UserPortalComponent);
+    fixture = TestBed.createComponent(BudgetDashboardComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

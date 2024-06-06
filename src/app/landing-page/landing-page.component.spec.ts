@@ -1,17 +1,17 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-import { PublicPagesComponent } from './public-pages.component';
+import { LandingPageComponent } from './landing-page.component';
 import { KeycloakService } from 'keycloak-angular';
 
-describe('PublicPagesComponent', () => {
-  let component: PublicPagesComponent;
-  let fixture: ComponentFixture<PublicPagesComponent>;
+describe('LandingPageComponent', () => {
+  let component: LandingPageComponent;
+  let fixture: ComponentFixture<LandingPageComponent>;
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      imports: [ PublicPagesComponent ],
+      imports: [ LandingPageComponent ],
       providers: [ KeycloakService ]
     });
-    fixture = TestBed.createComponent(PublicPagesComponent);
+    fixture = TestBed.createComponent(LandingPageComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

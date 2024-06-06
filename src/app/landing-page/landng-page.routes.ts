@@ -1,9 +1,9 @@
 import { Route } from '@angular/router';
 import { HomeComponent } from './home/home.component';
-import { PublicPagesComponent } from './public-pages.component';
+import { LandingPageComponent } from './landing-page.component';
 
 export default [
-    {path: '', component: PublicPagesComponent, children: [
+    {path: '', component: LandingPageComponent, children: [
         { path: '', component: HomeComponent }
     ]}
   ] satisfies Route[];

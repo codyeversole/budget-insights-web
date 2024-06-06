@@ -1,17 +1,17 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-import { PublicPagesNavComponent } from './public-pages-nav.component';
+import { LandingPageNavComponent } from './landing-page-nav.component';
 import { KeycloakService } from 'keycloak-angular';
 
-describe('PublicPagesNavComponent', () => {
-  let component: PublicPagesNavComponent;
-  let fixture: ComponentFixture<PublicPagesNavComponent>;
+describe('LandingPageNavComponent', () => {
+  let component: LandingPageNavComponent;
+  let fixture: ComponentFixture<LandingPageNavComponent>;
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      imports: [ PublicPagesNavComponent ],
+      imports: [ LandingPageNavComponent ],
       providers: [ KeycloakService ]
     });
-    fixture = TestBed.createComponent(PublicPagesNavComponent);
+    fixture = TestBed.createComponent(LandingPageNavComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

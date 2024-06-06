@@ -1,16 +1,16 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { KeycloakService } from 'keycloak-angular';
-import { UserService } from '../../services/user-service';
+import { UserService } from '../../shared/services/user-service';
 
 @Component({
-  selector: 'app-public-pages-nav',
+  selector: 'app-landing-page-nav',
   standalone: true,
   imports: [CommonModule],
-  templateUrl: './public-pages-nav.component.html',
-  styleUrls: ['./public-pages-nav.component.scss']
+  templateUrl: './landing-page-nav.component.html',
+  styleUrls: ['./landing-page-nav.component.scss']
 })
-export class PublicPagesNavComponent {
+export class LandingPageNavComponent {
 
   isLoggedIn = this.keycloakService.isLoggedIn();
 
