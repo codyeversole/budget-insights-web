@@ -27,11 +27,11 @@ export const appConfig: ApplicationConfig = {
   providers: [
     importProvidersFrom(BrowserModule, CommonModule, KeycloakAngularModule),
     provideRouter(routes),
-    {
-      provide: APP_INITIALIZER,
-      useFactory: initializeKeycloak,
-      multi: true,
-      deps: [KeycloakService]
-    }
+    // {
+    //   provide: APP_INITIALIZER,
+    //   useFactory: initializeKeycloak,
+    //   multi: true,
+    //   deps: [KeycloakService]
+    // }
   ]
 };

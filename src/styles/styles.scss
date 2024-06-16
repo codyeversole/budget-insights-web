@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 :root { 
-   --primary-color: #99ccff;
+   --primary-color: #336699;
    --secondary-color: #336699;
    --grey-color: #f2f2f2;
    --dark-color: #1a1a1a;
@@ -11,7 +11,7 @@
 
 body {
     @apply p-0 m-0;
-    font-family: Roboto-Regular;
+    font-family: Ubuntu;
 }
 
 @font-face {
